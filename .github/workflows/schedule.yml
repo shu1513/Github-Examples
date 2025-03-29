@@ -1,0 +1,10 @@
+on:
+  schedule:
+    - cron: '*/1 * * * *'
+  
+job:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Echo current 
+        run: echo "the current server time is $(date)"
